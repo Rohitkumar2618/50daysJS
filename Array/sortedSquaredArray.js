@@ -30,6 +30,7 @@ var sortedSquares = function (nums) {
     const leftSquared = nums[leftPointer] ** 2; // Square the value at leftPointer
     const rightSquared = nums[rightPointer] ** 2; // Square the value at rightPointer
 
+    // Place the larger square into the current index in the new array and move the pointers accordingly.
     if (leftSquared > rightSquared) {
       newArray[i] = leftSquared;
       leftPointer++;
