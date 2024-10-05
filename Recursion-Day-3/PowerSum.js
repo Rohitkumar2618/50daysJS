@@ -3,7 +3,7 @@ function powerSum(array, power = 1) {
 
   array.forEach((item) => {
     if (Array.isArray(item)) {
-      sum += powerSum(itme, powe + 1);
+      sum += powerSum(item, power + 1);
     } else {
       sum += item;
     }
